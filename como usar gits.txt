@@ -1,0 +1,10 @@
+
+como usar git
+git clone  clona
+git add . agrega
+git commit -m "comentario"
+git push sube
+
+
+git config --global user.name "TomasHurtado"
+git config --global user.email "tomas221298@gmail.com"
