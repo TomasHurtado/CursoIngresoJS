@@ -12,9 +12,10 @@ function Sumar ()
 
 
 
-	numerouno= PreioUno.value;
-	numerodos=PrecioDos.value;
-	numerotres=PrecioTres.value;
+	numerouno=precioUno.value;
+	numerodos=precioDos.value;
+	numerotres=precioTres.value;
+	alert(numerouno);
 	
 	numerouno=parseInt(numerouno);
 	numerodos=parseInt(numerodos);

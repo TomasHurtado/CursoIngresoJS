@@ -2,22 +2,32 @@ function mostrar()
 {
 //tomo la edad  
 
+
+//alert(estadoCivil.value);
 	var edades;
 	var civil;
 
-edades=edad.value;
+	edades=edadIngresada.value;
+	civil=estadoCivil.value;
 
-edades=parseInt(edades);
-civil=estadoCivil.value;
+	edades=parseInt(edades);
 
-if (edades<18) 
-{
-	if () 
+	//alert(civil+edades)
+	
+	if (civil == "Casado" || civil=="Divorciado") 
 	{
-		alert("Es muy pequeño para NO ser soltero.");
+		if (edades>18) 
+		{
+			
+		}
+		else
+		{
+			alert("Es muy pequeño para NO ser soltero.");
+			
+		}
+
+
 	}
 }
 
-
-
-}//FIN DE LA FUNCIÓN
+//FIN DE LA FUNCIÓN
