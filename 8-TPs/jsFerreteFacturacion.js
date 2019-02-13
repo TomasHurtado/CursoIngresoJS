@@ -15,7 +15,7 @@ function Sumar ()
 	numerouno=precioUno.value;
 	numerodos=precioDos.value;
 	numerotres=precioTres.value;
-	alert(numerouno);
+	
 	
 	numerouno=parseInt(numerouno);
 	numerodos=parseInt(numerodos);
