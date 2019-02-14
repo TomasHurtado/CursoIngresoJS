@@ -6,8 +6,10 @@ function mostrar()
 	var total;
 
 	//no hay recio asi que puso uno random entre 1 y 10.000
-	precio= alert(Math.floor((Math.random() * 10000) + 1));
-	recargo=(precio*10)/100;
+	 //se pide al usuario
+	 precio=prompt("Ingrese precio:");
+	 precio=parseInt(precio);
+	 recargo=(precio*10)/100;
 
 	total=precio+recargo;
 
