@@ -10,5 +10,150 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	//alert(Marca.value);
+ 	var cantidad;
+ 	var descuento;
+ 	var precio;
+ 	var marca;
+ 	var PrecioDescuento;
+ 	var impuesto;
+ 	var IngresosBrutos;
+
+
+ 	cantidad=Cantidad.value;
+ 	cantidad=parseInt(cantidad);
+
+ 	if (cantidad>=6) 
+ 	{
+ 		precio=cantidad*35;
+ 		descuento=(precio*50)/100;
+ 		PrecioDescuento=precio-descuento;
+ 		precioDescuento.value=PrecioDescuento;
+
+ 		if (PrecioDescuento>120) 
+ 		{
+ 			impuesto=(PrecioDescuento*10)/100;
+ 			IngresosBrutos=PrecioDescuento+impuesto;
+ 			alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 		}
+ 	}
+ 	 else
+ 		{
+ 			if (cantidad==5) 
+ 			{
+ 				marca=Marca.value;
+
+ 				if (marca=="ArgentinaLuz") 
+ 				{
+ 					precio=cantidad*35;
+ 					descuento=(precio*40)/100;
+ 					PrecioDescuento=precio-descuento;
+ 					precioDescuento.value=PrecioDescuento;
+
+ 						if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+ 				}
+ 				else
+ 				{
+ 					precio=cantidad*35;
+ 					descuento=(precio*30)/100;
+ 					PrecioDescuento=precio-descuento;
+ 					precioDescuento.value=PrecioDescuento;
+
+ 						if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+ 				}
+ 			}
+
+ 			if (cantidad==4) 
+ 			{
+ 				marca=Marca.value;
+ 				if (marca=="ArgentinaLuz" || marca=="FelipeLamparas") 
+ 				{
+ 					precio=cantidad*35;
+ 					descuento=(precio*25)/100;
+ 					PrecioDescuento=precio-descuento;
+ 					precioDescuento.value=PrecioDescuento;
+
+ 					if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+ 				}
+ 				else
+ 				{
+ 					precio=cantidad*35;
+ 					descuento=(precio*20)/100;
+ 					PrecioDescuento=precio-descuento;
+ 					precioDescuento.value=PrecioDescuento;
+
+ 					if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+ 				}
+ 			}
+ 			if (cantidad==3) 
+ 			{
+ 				marca=Marca.value;
+ 				if (marca=="ArgentinaLuz") 
+ 				{
+ 					precio=cantidad*35;
+ 					descuento=(precio*15)/100;
+ 					PrecioDescuento=precio-descuento;
+ 					precioDescuento.value=PrecioDescuento;
+
+ 					if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+ 				}
+ 				else
+ 				{
+ 					if (marca=="FelipeLamparas") 
+ 					{
+ 						precio=cantidad*35;
+ 						descuento=(precio*10)/100;
+ 						PrecioDescuento=precio-descuento;
+ 						precioDescuento.value=PrecioDescuento;
+
+ 						if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+ 					}
+ 					else
+ 					{
+ 						precio=cantidad*35;
+ 						descuento=(precio*5)/100;
+ 						PrecioDescuento=precio-descuento;
+ 						precioDescuento.value=PrecioDescuento;
+
+ 						if (PrecioDescuento>120) 
+ 						{
+ 							impuesto=(PrecioDescuento*10)/100;
+ 							IngresosBrutos=PrecioDescuento+impuesto;
+ 							alert("IIBB Usted pago " + IngresosBrutos + ", siendo " + impuesto +"el impuesto que se pago");
+ 						}		
+
+ 					}	
+ 				}
+ 			}
+ 		}
 }
