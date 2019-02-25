@@ -23,12 +23,11 @@ function mostrar()
 				mensaje="es de noche";
 			}
 		}
-		if (hora>=20 && <24) 
+		if (hora>=20 && hora<24) 
 		{
 			mensaje="a dormir";
 		}
-		default:
-		mensaje="no es una hora valida";
+		
  		
  	}
  	
