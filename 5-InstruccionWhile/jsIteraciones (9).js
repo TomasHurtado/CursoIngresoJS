@@ -1,9 +1,9 @@
 function mostrar()
 {
-
+	var numero=0;
 	var contador=0;
 	// declarar variables
-	var max;
+	var max=0;
 	var min;
 	var respuesta='si';
 
@@ -12,13 +12,17 @@ function mostrar()
 	 numero=prompt("ingrese numero");
 	 numero=parseInt(numero);
 	 contador=contador+1;
-	 if (numero>numero) 
+	 if (numero>max) 
 	 {
 	 	max=numero;
 	 }
-	 else(numero<numero)
+	 else
 	 {
 	 	min=numero;
+	 	if (min<numero) 
+	 	{
+	 		min=numero;
+	 	}
 	 }
 	 
 	 respuesta=prompt("quiere segir ingresando?");
