@@ -1,4 +1,4 @@
-function mostrar()
+/*function mostrar()
 {
 	var importeUno;
 	var importeDos;
@@ -40,7 +40,47 @@ function mostrar()
 	
 
 }
+*/
 
+function mostrar()
+{	var numerouno;
+	var numerodos;
+	var resta;
+	var suma;
+
+
+
+	numerouno=prompt("ingrese primer numero");
+	numerodos=prompt("ingrese segundo numero");
+
+	if (numerouno==numerodos) 
+	{
+		alert(numerouno+" "+numerodos);
+	}
+	else
+	{
+		if (numerouno>numerodos) 
+		{
+			resta=numerouno-numerodos;
+			alert("la resta es "+resta);
+
+		}
+		else
+		{
+			if (numerouno<numerodos) 
+			{
+				suma=numerouno+numerodos;
+
+				alert("la suma es"+suma);
+
+				if (suma>10) 
+				{
+					alert("la suma es " + suma + "y supero los 10");
+				}
+			}
+		}
+	}
+}
 
 
 

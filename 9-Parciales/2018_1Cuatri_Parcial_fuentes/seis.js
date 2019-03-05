@@ -27,6 +27,10 @@ function mostrar()
 		{
 			mensaje="a dormir";
 		}
+		if (hora>24) 
+		{
+			mensaje="no es valida la hora";
+		}
 		
  		
  	}
